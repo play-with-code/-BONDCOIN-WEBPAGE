@@ -1,0 +1,933 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body{
+    background-color:#081b29;
+    color: #00abf0;
+    /* font-family:"Happy Monkey", system-ui ; */
+}
+nav{
+    display: flex;
+    justify-content:right;
+    text-align: center;
+
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:#ffffff;
+    /* margin-left: 15px; */
+    margin-right: 5px;
+    transition: 0.9s;
+    float: right;
+}
+nav a:hover{
+    color: #00abf0;
+    text-decoration: underline;
+}
+.main{
+    width: 100%;
+    height: 80vh;
+    /* border-bottom: 5px solid #ffffff; */
+}
+.main-div{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    
+    /* background-color: yellow; */
+    align-items: center;
+    /* gap:20px */
+}
+
+.img{
+    /* background-color: blue; */
+    background-image: url('bond2.jpg');
+    background-size: 100% 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    border: 1px solid white;
+    border-radius: 50%;
+    /* justify-content: center; */
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    
+}
+.img h3{
+    text-align: center;
+    color: black;
+}
+.img img{
+    
+    width: 100%;
+    
+    height: 100%;
+}
+.main-heading{
+    padding-top: 50px;
+    width:900px;
+    height: 300px;
+    font-size: 2rem;
+    text-align: center;
+    /* border: 5px solid #ffffff; */
+    /* background-color: maroon; */
+}
+.main-heading h1{
+    font-family: "Happy Monkey", system-ui;
+    font-weight: bold;
+    /* padding-top: 100px; */
+}
+.about{
+    width: 100%;
+    height: 110vh;
+}
+.about-div{
+    height: 110vh;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border : 3px solid #ffffff */
+}
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.container1{
+    width: 800px;
+    height:650px;
+    /* text-align: center; */
+    font-family: "Happy Monkey", system-ui;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    /* border: 5px solid #fff; */
+    /* background-color: black; */
+}
+.container1 p{
+    padding: 0 20px;
+    word-spacing: 2px;
+    line-height: 2rem;
+   font-size: 1.7rem;
+   font-weight: 400;
+   text-align: center;
+   color:#ffffff;
+   font-family:"Happy Monkey", system-ui;
+   
+}
+.about h2{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.container2{
+    background-image: url('bond2.jpg');
+    background-size: 100% 100%;
+    border: 1px solid #081b29;
+    border-radius: 50%;
+    height:500px;
+    width: 500px;
+    margin-right:20px;
+   
+}
+.container2 img{
+    width: 100%;
+    height: 100%;
+}
+.buy{
+    height: 170vh;
+    width: 100%;
+}
+.buy-div1{
+    height: 170vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 30px; */
+    /* background-color: rgba(255, 255, 0, 0.562); */
+}
+.buy-div{
+    width: 700px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius:20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.7s;
+    /* text-align: center; */
+
+}
+.buy-div h1, span{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.buy-div:hover{
+    scale:1.1;
+    /* border: 15px solid white; */
+}
+.img-buy{
+    width: 1000px;
+    height: 200px;
+    /* border: 10px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.txt{
+    width: 200px;
+    height: 170px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.txt p{
+    word-wrap: wrap;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.ignore{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-image: url(bond2.jpg);
+    background-size:100% 100%;
+}
+/* #Bondcoin{
+width: 300px;
+   
+} */
+
+.community{
+    height: 150vh;
+    width: 100%;
+    /* background-color: yellow; */
+}
+.community-div{
+    height:150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    /* background-color: yellow; */
+}
+.Bondcoin-community{
+    width: 60%;
+    height: 150px;
+    border: 7px solid white;
+    border-radius: 30px;
+    text-align: center;
+    /* background-color: skyblue; */
+    /* background-color: aquamarine; */
+}
+
+.Bondcoin-community h1{
+    padding-top: 30px;
+    
+    font-size:3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.join-comm{
+    width: 1000px;
+    height: 300px;
+    /* border: 13px solid navy; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.div1{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 300px;
+    height: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.comm-heading{
+    font-size: 2rem;
+    text-align: center;
+}
+.join-div{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+
+
+
+.join-div h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* .joindiv-img img{
+    width: 300px;
+    object-fit: cover;
+} */
+
+.joibutton a{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 15px;
+    color:white;
+    transition: 0.7s;
+    /* background-color: maroon; */
+}
+.joibutton a:hover{
+    background-color:#00abf0;
+    color: black;
+}
+.footer{
+    width: 100%;
+}
+.footer h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700s;
+}
+
+.footer-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.205); */
+}
+.footer-div img{
+    width: 250px;
+    transition: 0.8s;
+}
+#twitter{
+    width: 120px;
+    height: 120px;
+}
+#telegram{
+    width: 192px;
+    height: 180px;
+}
+.footer-div img:hover{
+    scale: 1.2;
+}
+
+.main-div{
+    animation: fadeInTop 0.5s ease-out forwards;
+}
+
+@keyframes fadeInTop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main-heading,.buy-div,.img-buy,.ignore,.Bondcoin-community,.join-comm{
+    animation: zoomIn 0.8s ease-out forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* .joibutton {
+    animation: bounce 0.75s ease-in-out infinite alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+} */
+
+@media screen and (min-width:200px) and (max-width:399px){
+    nav{
+     display: flex;
+     
+     justify-content: center;
+    }
+    nav a{
+        font-size: 13px;
+     margin: 0;
+    }
+     .main{
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+     }
+   
+     .main-div{
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         justify-content: flex-end;
+         flex-direction: column-reverse;
+     }
+     .main-heading{
+         width: 314px;
+         height: 272px;
+         text-align: center;
+         font-size: 1.1rem;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         padding-top: 10px;
+ 
+     }
+     .main-heading h1{
+         text-align: center;
+     }
+     .img{
+         width: 265px;
+         height: 265px;
+     }
+    .about{
+     height: 205vh;
+    }
+   
+     .about-div{
+         height: 199vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 40px;
+         /* background-color: yellow; */
+     }
+    .container1{
+     width: 304px;
+     height: 969px;
+     margin-top: 20px;
+    }
+    .container1 h2{
+     font-size: 2rem;
+    }
+    .container1 p{
+        font-size: 1.3rem;
+    }
+    .container2{
+     width: 250px;
+     height: 250px;
+    }
+     .buy{
+         height: 266vh;
+     }
+     .buy-div1 {
+         height: 266vh;
+         width: 100%;
+     }
+     .buy-div{
+         width: 259px;
+         border: 3px solid white;
+     }
+     .buy-div h1{
+         font-size: 2.5rem;
+     }
+     .img-buy{
+         width: 100%;
+         height: 850px;
+      
+         display: flex;
+         flex-direction: column;
+         
+         
+     }
+     .h3{
+        font-size: 2.2rem;
+     }
+     .txt{
+         width: 200px;
+         border-radius:40px;
+         /* text-align: center; */
+     }
+     .txt p{
+         
+         font-weight: bold;
+         font-size: 1.5rem;
+     }
+     .community{
+         height: 212vh;
+     }
+     .community-div{
+         height: 202vh;
+         margin-top: 50px;
+         /* border: 5px solid white; */
+     }
+    .join-comm{
+     height: 900px;
+     display: flex;
+     flex-direction:column ;
+     gap: 50px;
+     /* border:5px solid #ffffff */
+    }
+    .Bondcoin-community{
+     border: 4px solid white;
+     /* text-align: center; */
+     height: 142px;
+     width: 89%;
+    }
+    .Bondcoin-community h1{
+     text-align: center;
+     font-size: 2rem;
+    }
+    .ignore{
+        width: 220px;
+        height: 233px;
+    }
+    .div1{
+        width: 267px;
+    }
+   .footer-div{
+     width: 100%;
+   }
+   .footer-div img{
+     width: 75px;
+     height: 75px;
+   }
+   #telegram{
+     width: 71px;
+     height: 71px;
+   }
+   #twitter{
+     height: 51px;
+     width: 51px;
+   }
+   .footer h1 {
+     padding-top: 27px;
+     text-align: center;
+     font-size: 2.5rem;}
+ }
+ 
+
+@media screen and (min-width:400px) and (max-width:525px){
+   nav{
+    display: flex;
+    
+    justify-content: center;
+   }
+   nav a{
+    margin: 0;
+   }
+    .main{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .main-div{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+    }
+    .main-heading{
+        width: 314px;
+        height: 272px;
+        text-align: center;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10px;
+
+    }
+    .main-heading h1{
+        text-align: center;
+    }
+    .img{
+        width: 265px;
+        height: 265px;
+    }
+   .about{
+    height: 205vh;
+   }
+  
+    .about-div{
+        height: 199vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        /* background-color: yellow; */
+    }
+   .container1{
+    width: 388px;
+    height: 1000px;
+    margin-top: 20px;
+   }
+   .container1 h2{
+    font-size: 2.7rem;
+   }
+   .container2{
+    width: 250px;
+    height: 250px;
+   }
+    .buy{
+        height: 266vh;
+    }
+    .buy-div1 {
+        height: 266vh;
+        width: 100%;
+    }
+    .buy-div{
+        width: 259px;
+        border: 3px solid white;
+    }
+    .buy-div h1{
+        font-size: 2.5rem;
+    }
+    .img-buy{
+        width: 100%;
+        height: 850px;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: column;
+        /* border:5px solid #ffffff */
+    }
+    .txt{
+        width: 200px;
+        border-radius:40px;
+        /* text-align: center; */
+    }
+    .txt p{
+        
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .community{
+        height: 212vh;
+    }
+    .community-div{
+        height: 202vh;
+        margin-top: 50px;
+        /* border: 5px solid white; */
+    }
+   .join-comm{
+    height: 900px;
+    display: flex;
+    flex-direction:column ;
+    gap: 50px;
+    /* border:5px solid #ffffff */
+   }
+   .Bondcoin-community{
+    border: 4px solid white;
+    /* text-align: center; */
+    height: 142px;
+    width: 89%;
+   }
+   .Bondcoin-community h1{
+    text-align: center;
+   }
+  .footer-div{
+    width: 100%;
+  }
+  .footer-div img{
+    width: 75px;
+    height: 75px;
+  }
+  #telegram{
+    width: 71px;
+    height: 71px;
+  }
+  #twitter{
+    height: 51px;
+    width: 51px;
+  }
+  .footer h1 {
+    padding-top: 27px;
+    text-align: center;
+    font-size: 2.5rem;}
+}
+
+@media screen and (min-width:526px) and (max-width:623px){
+    nav a{
+        margin: 5px;
+    }
+    .main{
+        height: 125vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .main-div{
+        height: 119vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-heading{
+        width: 562px;
+    }
+    .main-heading{
+        font-size: 1.7rem;
+    }
+    .img img{
+        width: 80%;
+    
+        height: 100%;
+    }
+   .about{
+    height: 199vh;
+   }
+  
+    .about-div{
+        height: 195vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        /* background-color: yellow; */
+    }
+   .container1{
+    width: 546px;
+   }
+   .container2{
+    width: 350px;
+    height: 350px;
+   }
+    .buy{
+        height: 266vh;
+    }
+    .buy-div1 {
+        height: 266vh;
+        width: 100%;
+    }
+    .buy-div{
+        width: 476px;
+    }
+    .img-buy{
+        width: 100%;
+        height: 850px;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: column;
+        /* border:5px solid #ffffff */
+    }
+    .txt{
+        width: 400px;
+        border-radius:40px;
+        /* text-align: center; */
+    }
+    .txt p{
+        
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .community{
+        height: 212vh;
+    }
+    .community-div{
+        height: 202vh;
+        margin-top: 50px;
+        /* border: 5px solid white; */
+    }
+   .join-comm{
+    height: 900px;
+    display: flex;
+    flex-direction:column ;
+    gap: 50px;
+    /* border:5px solid #ffffff */
+   }
+   .Bondcoin-community{
+    border: 4px solid white;
+    /* text-align: center; */
+    height: 142px;
+    width: 89%;
+   }
+   .Bondcoin-community h1{
+    text-align: center;
+   }
+   /* .div1{
+    width: 600px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 40px;
+   }
+   .div1 h1{
+    font-size: 2.5rem;
+   } */
+   /* .joibutton a{
+    padding: 23px 219px;
+    border-radius: 40px;
+   } */
+}
+@media screen and (min-width:623px) and (max-width:967px){
+    nav a{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main{
+        height: 125vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .main-div{
+        height: 119vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-heading{
+        width: 600px;
+    }
+    .img img{
+        width: 80%;
+    
+        height: 100%;
+    }
+   .about{
+    height: 213vh;
+   }
+  
+    .about-div{
+        height: 212vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        /* background-color: yellow; */
+    }
+   .container1{
+    width: 602px;
+   }
+   
+    .buy{
+        height: 266vh;
+    }
+    .buy-div1 {
+        height: 266vh;
+        width: 100%;
+    }
+    .buy-div{
+        width: 476px;
+    }
+    .img-buy{
+        width: 100%;
+        height: 850px;
+        /* background-color: beige; */
+        display: flex;
+        flex-direction: column;
+        /* border:5px solid #ffffff */
+    }
+    .txt{
+        width: 400px;
+        border-radius:40px;
+        /* text-align: center; */
+    }
+    .txt p{
+        
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    .community{
+        height: 212vh;
+    }
+    .community-div{
+        height: 202vh;
+        margin-top: 50px;
+    }
+   .join-comm{
+    height: 850px;
+    display: flex;
+    flex-direction:column ;
+    /* gap: 50px; */
+    /* border:5px solid #ffffff */
+   }
+   .Bondcoin-community{
+    
+    /* text-align: center; */
+    height: 142px;
+    width: 89%;
+   }
+   .Bondcoin-community h1{
+    text-align: center;
+   }
+   .div1{
+    width: 600px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 40px;
+   }
+   .div1 h1{
+    font-size: 2.5rem;
+   }
+   .joibutton a{
+    padding: 23px 219px;
+    border-radius: 40px;
+   }
+}
+
+
+
